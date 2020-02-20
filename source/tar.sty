@@ -1,0 +1,48 @@
+\ProvidesPackage{tar}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+    \setkeys{Gin}{draft=false}
+\usepackage{draftwatermark}
+    \SetWatermarkScale{1}
+    \SetWatermarkLightness{0.8}
+\usepackage[a4paper,top=1cm, bottom=4cm, includeheadfoot]{geometry}
+\setlength{\footskip}{15pt}
+\setlength\headheight{3.8cm}
+\usepackage{fancyhdr}
+    \pagestyle{fancy}
+\usepackage[export]{adjustbox}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{sectsty}
+\usepackage{parskip}
+\usepackage{lastpage}
+\usepackage[obeyDraft]{todonotes}
+
+% Python Brand Colours
+\definecolor{python-blue}{HTML}{4584b6}
+\definecolor{python-yellow}{HTML}{ffde57}
+\definecolor{python-grey}{HTML}{646464}
+
+% UKPA Logo Colours
+\definecolor{logo-red}{HTML}{dd2e44}
+\definecolor{logo-blue}{HTML}{226699}
+
+\newcommand \reporttitle[1] {
+    \rhead{\bfseries \Large \textcolor{python-blue}{#1}}
+}
+
+% Header and Footer
+%
+\lhead{\includegraphics[width=2.5cm, valign=c]{img/UK_Python_Association_Logo.png}}
+\chead{}
+
+\lfoot{Page \thepage\ of \pageref{LastPage}}
+\cfoot{}
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Section Styling
+\color{python-grey}
+\sectionfont{\color{python-blue}}
