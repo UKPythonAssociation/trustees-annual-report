@@ -14,7 +14,10 @@
     \pagestyle{fancy}
 \usepackage[export]{adjustbox}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[immediate]{silence}
+\WarningFilter[temp]{latex}{Command}
 \usepackage{sectsty}
+\DeactivateWarningFilters[temp]
 \usepackage{parskip}
 \usepackage{lastpage}
 \usepackage[obeyDraft]{todonotes}
